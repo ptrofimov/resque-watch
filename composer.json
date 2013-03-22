@@ -1,0 +1,6 @@
+{
+    "minimum-stability":"dev",
+    "require":{
+        "chrisboulton/php-resque":"master"
+    }
+}
