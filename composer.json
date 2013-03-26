@@ -2,5 +2,10 @@
     "minimum-stability":"dev",
     "require":{
         "chrisboulton/php-resque":"master"
+    },
+    "autoload":{
+        "psr-0":{
+            "Terminal":"src"
+        }
     }
 }
