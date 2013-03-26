@@ -14,6 +14,27 @@ class Window
     private $height;
 
     /**
+     * @var bool
+     */
+    private $autoFlush;
+
+    /**
+     * @param bool $autoFlush
+     */
+    public function __construct($autoFlush = false)
+    {
+        $this->autoFlush = (bool) $autoFlush;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isAutoFlush()
+    {
+        return $this->autoFlush;
+    }
+
+    /**
      * @return int|null
      *
      * @throws \RuntimeException
@@ -47,5 +68,15 @@ class Window
         }
 
         return $this->height;
+    }
+
+    public function write($string, $hideOverflow = true)
+    {
+
+    }
+
+    public function flush()
+    {
+
     }
 }
